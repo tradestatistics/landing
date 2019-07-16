@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "animate.css/animate.min.css";
+import "./style.scss";
+import "./prism.css";
+import Footer from "./Footer";
+import Hero from "./Hero";
+import GettingStarted from "./GettingStarted";
+import Testimonials from "./Testimonials";
+import Philosophy from "./Philosophy";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="layout">
+      <div className="content">
+        <Hero/>
+        <Philosophy/>
+        <Testimonials/>
+        <GettingStarted/>
+      </div>
+      <Footer/>
     </div>
   );
 }
