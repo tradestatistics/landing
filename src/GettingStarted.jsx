@@ -5,7 +5,7 @@ import { PrismCode } from "react-prism";
 
 const GettingStarted = () => {
 	return <section className="ts-getting-started d-flex wrap" id="getting-started">
-				<div className="col-5 d-flex justify-center padding-4">
+				<div className="col-12-xs col-5-lg d-flex justify-center padding-4">
 					<ScrollAnimation animateIn="fadeInLeft" duration={2} animateOnce>
 						<SectionTitle text="Getting Started ."/>
 						<p>
@@ -18,7 +18,7 @@ const GettingStarted = () => {
 						</p>
 					</ScrollAnimation>
 				</div>
-				<div className="d-flex col-7 direction-column align-center padding-4">
+				<div className="d-flex col-12-xs col-7-lg direction-column align-center padding-4">
 					<div className="col-12 code-instruction">
 						<div className="step">Add required libraries</div>
 						<pre className="lang-r" style={{ width: "100%" }}>

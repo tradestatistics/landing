@@ -6,12 +6,12 @@ const Philosophy = () => {
 
 	return <div className="ts-philosophy" id="philosophy">
 				<div className="wrapper d-flex wrap align-center">
-					<div className="text-center col-4 d-flex align-center">
+					<div className="text-center col-4-lg col-12-md d-flex align-center">
 						<ScrollAnimation animateIn="fadeInDown" duration={2} animateOnce>
 							<SectionTitle text="Our Philosophy ."/>
 						</ScrollAnimation>
 					</div>
-					<div className="description col-8 serif padding-2">
+					<div className="description col-8-lg col-12-md serif padding-2">
 						<ScrollAnimation animateIn="fadeIn" animateOnce>
 							<p>
 								Open Trade Statistics is an independent project that values

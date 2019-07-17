@@ -11,14 +11,14 @@ const Hero = () => {
 		const el = document.getElementsByClassName("ts-getting-started")[0];
 		if(!el)
 			return;
-		el.scrollIntoView();
+		el.scrollIntoView({behavior: "smooth"});
 	}, []);
 
 	return <section className="ts-hero">
 				<div className="hero-content">
 					<Navbar/>
 				  	<img className="logo" alt="logo" src={logo}/>
-				  	<div className="title">
+				  	<div className="title text-center">
 				  		An Independent project that values reproducible research and provides tidy trade data.
 				  	</div>
 				  	<button className="cta-button" onClick={scrollToGettingStarted}>
