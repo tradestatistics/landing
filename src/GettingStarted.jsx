@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import SectionTitle from "./components/SectionTitle";
+import SectionSubTitle from "./components/SectionSubTitle";
 import { PrismCode } from "react-prism";
 
 const GettingStarted = () => {
@@ -27,7 +28,7 @@ const GettingStarted = () => {
 				</div>
 				<div className="d-flex col-12-xs col-7-lg direction-column align-center padding-4">
 					<div className="col-12 code-instruction">
-						<SectionTitle text="Using the API from R"/>
+						<SectionSubTitle text="Using the API from R"/>
 						<pre className="lang-r" style={{ width: "100%" }}>
 	                        <PrismCode className="lang-r">
 	                            {
@@ -48,7 +49,7 @@ ots_create_tidy_data(years = 2017, reporters = "chl", partners = "arg")
 	         </div>
 
 					 <div className="col-12 code-instruction">
- 						<SectionTitle text="Using the API from Python"/>
+ 						<SectionSubTitle text="Using the API from Python"/>
  						<pre className="lang-r" style={{ width: "100%" }}>
  	                        <PrismCode className="lang-r">
  	                            {
