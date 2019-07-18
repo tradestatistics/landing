@@ -14,7 +14,8 @@
    font-family: 'Fira Sans';
 }
 
-$primary: #e44c65;
+// $primary: #e44c65;
+$primary: #164f86ff;
 
 * {
 	box-sizing: border-box;
@@ -458,6 +459,10 @@ button.primary {
 		color: #969696;
 		font-weight: 300;
 	}
+
+  .footer-link {
+    color: white !important;
+  }
 }
 
 

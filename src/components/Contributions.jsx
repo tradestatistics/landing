@@ -9,7 +9,7 @@ const Contribution = ({avatar, name, contribution, github, side = "left"}) => (
 					<p className="contribution-text">
 						<a href={github}>{name}</a>
 					</p>
-					<p className="name color-primary">
+					<p className="name">
 						{contribution}
 					</p>
 				</div>

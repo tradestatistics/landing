@@ -39,9 +39,9 @@ const Footer = () => {
 				</div>
 				<div className="copyright d-flex justify-center align-center direction-column">
 					<div>
-						Except where otherwise noted, content on this site is licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC license</a>.
+						Except where otherwise noted, content on this site is licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" class="footer-link">CC-BY-NC license</a>.
 					</div>
-					<div>Designed by <a href="https://github.com/erasmo-marin">erasmo-marin</a> with ❤️</div>
+					<div>Designed by <a href="https://github.com/erasmo-marin" class="footer-link">erasmo-marin</a> with ❤️</div>
 				</div>
 			</footer>
 }
