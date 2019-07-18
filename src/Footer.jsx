@@ -16,6 +16,7 @@ const Footer = () => {
 						<ul>
 							<li><a href="https://docs.tradestatistics.io/datasets.html#compressed-data" target="_blank" rel="noopener noreferrer">Datasets</a></li>
 							<li><a href="https://docs.tradestatistics.io/datasets.html#r-package" target="_blank" rel="noopener noreferrer">R Package</a></li>
+							<li><a href="https://marketplace.digitalocean.com/apps/rstudio" target="_blank" rel="noopener noreferrer">RStudio 1-Click Droplet</a></li>
 						</ul>
 					</div>
 					<div className="links-col">
@@ -37,12 +38,12 @@ const Footer = () => {
 					<img src={digitalOceanIcon} alt="digital ocean" width="200" height="auto"/>
 				</div>
 				<div className="copyright d-flex justify-center align-center direction-column">
-					<div>Copyright 2019 Trade Statistics, All Right Reserved</div>
-					<div>Web by <a href="https://github.com/erasmo-marin">erasmo-marin</a> with ❤️</div>
+					<div>
+						Except where otherwise noted, content on this site is licensed under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC license</a>.
+					</div>
+					<div>Designed by <a href="https://github.com/erasmo-marin">erasmo-marin</a> with ❤️</div>
 				</div>
 			</footer>
 }
 
 export default Footer;
-
-

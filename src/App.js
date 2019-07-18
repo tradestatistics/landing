@@ -4,9 +4,10 @@ import "./style.scss";
 import "./prism.css";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import GettingStarted from "./GettingStarted";
-import Testimonials from "./Testimonials";
 import Philosophy from "./Philosophy";
+import GettingStarted from "./GettingStarted";
+// import Testimonials from "./Testimonials";
+import Contributions from "./Contributions";
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
       <div className="content">
         <Hero/>
         <Philosophy/>
-        <Testimonials/>
+        {/* <Testimonials/> */}
         <GettingStarted/>
+        <Contributions/>
       </div>
       <Footer/>
     </div>

@@ -1,14 +1,14 @@
 import React, { useCallback } from "react";
-import logo from "./assets/logo.svg";
+import logo from "./assets/logo-white.svg";
 import Navbar from "./Navbar";
 import ScrollInvitation from "./components/ScrollInvitation";
 
 const Hero = () => {
 
-	const scrollToGettingStarted = useCallback((e) => {
+	const scrollToPhilosophy = useCallback((e) => {
 		e.preventDefault();
 		e.stopPropagation();
-		const el = document.getElementsByClassName("ts-getting-started")[0];
+		const el = document.getElementsByClassName("ts-philosophy")[0];
 		if(!el)
 			return;
 		el.scrollIntoView({behavior: "smooth"});
@@ -21,8 +21,8 @@ const Hero = () => {
 				  	<div className="title text-center">
 				  		An Independent project that values reproducible research and provides tidy trade data.
 				  	</div>
-				  	<button className="cta-button" onClick={scrollToGettingStarted}>
-				  		Get Started
+				  	<button className="cta-button" onClick={scrollToPhilosophy}>
+				  		Learn More
 				  	</button>
 				  	<ScrollInvitation style={{
 				  		position: "absolute",
