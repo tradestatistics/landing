@@ -1,77 +1,101 @@
 import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
-import Contribution from "./components/Contributions";
 import SectionTitle from "./components/SectionTitle";
 
 const contributions = [
-{
-	avatar: "https://avatars1.githubusercontent.com/u/10091065?s=460&v=4",
-	name: "Pachá",
-	github: "https://github.com/pachamaltese",
-	contribution: `Project Lead`,
-	side: "left"
-},
-{
-	avatar: "https://avatars1.githubusercontent.com/u/19798371?s=460&v=4",
-	name: "Emily Riederer",
-	github: "https://github.com/emilyriederer",
-	contribution: `Software review`,
-	side: "left"
-},
-{
-	avatar: "https://avatars1.githubusercontent.com/u/6697851?s=460&v=4",
-	name: "Mark Padgham",
-	github: "https://github.com/mpadge",
-	contribution: `Software review`,
-	side: "left"
-},
+
 {
 	avatar: "https://avatars1.githubusercontent.com/u/4908283?s=460&v=4",
 	name: "Amanda Dobbyn",
 	contribution: `Software review`,
-	github: "https://github.com/aedobbyn",
-	side: "left"
+	github: "https://github.com/aedobbyn"
 },
-{
-	avatar: "https://avatars1.githubusercontent.com/u/8180025?s=460&v=4",
-	name: "Jorge Cimentada",
-	github: "https://github.com/cimentadaj",
-	contribution: `Software review`,
-	side: "left"
-},
-{
-	avatar: "https://avatars1.githubusercontent.com/u/56481?s=460&v=4",
-	name: "Joshua Kunst",
-	github: "https://github.com/jbkunst",
-	contribution: `Data wrangling`,
-	side: "left"
-},
+
 {
 	avatar: "https://avatars1.githubusercontent.com/u/8242873?s=460&v=4",
 	name: "Erasmo Marin",
 	github: "https://github.com/erasmo-marin",
-	contribution: `Website`,
-	side: "left"
+	contribution: `Website`
 }
 ]
 
-
-
-const Testimonials = () => {
+const Contributions = () => {
 	return <section className="ts-contributions d-flex justify-center wrap" id="contributions">
-				<div className="col-12 d-flex justify-center">
-					<ScrollAnimation animateIn="fadeIn" animateOnce>
+				<div className="col-12-xs col-7-lg d-flex justify-center padding-4">
+					<ScrollAnimation animateIn="fadeInLeft" duration={2} animateOnce>
 						<SectionTitle text="Team & Contributions"/>
+							<figure>
+								<a href="https://github.com/pachamaltese">
+									<img className="col-12-xs col-4-md col-3-lg ts-contributions-img" src="https://avatars1.githubusercontent.com/u/10091065?s=460&v=4" alt="pacha"/>
+								</a>
+								<figcaption>
+									<p className="ts-contributions-name">Pachá</p>
+									<p className="ts-contributions-detail">Project Lead</p>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<a href="https://github.com/emilyriederer">
+									<img className="col-12-xs col-4-md col-3-lg ts-contributions-img" src="https://avatars1.githubusercontent.com/u/19798371?s=460&v=4" alt="emily"/>
+								</a>
+								<figcaption>
+									<p className="ts-contributions-name">Emily Riederer</p>
+									<p className="ts-contributions-detail">Software Review</p>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<a href="https://github.com/mpadge">
+									<img className="col-12-xs col-4-md col-3-lg ts-contributions-img" src="https://avatars1.githubusercontent.com/u/6697851?s=460&v=4" alt="mark"/>
+								</a>
+								<figcaption>
+									<p className="ts-contributions-name">Mark Padgham</p>
+									<p className="ts-contributions-detail">Software Review</p>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<a href="https://github.com/jbkunst">
+									<img className="col-12-xs col-4-md col-3-lg ts-contributions-img" src="https://avatars1.githubusercontent.com/u/4908283?s=460&v=4" alt="amanda"/>
+								</a>
+								<figcaption>
+									<p className="ts-contributions-name">Amanda Dobbyn</p>
+									<p className="ts-contributions-detail">Software Review</p>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<a href="https://github.com/cimentadaj">
+									<img className="col-12-xs col-4-md col-3-lg ts-contributions-img" src="https://avatars1.githubusercontent.com/u/8180025?s=460&v=4" alt="jorge"/>
+								</a>
+								<figcaption>
+									<p className="ts-contributions-name">Jorge Cimentada</p>
+									<p className="ts-contributions-detail">Software Review</p>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<a href="https://github.com/jbkunst">
+									<img className="col-12-xs col-4-md col-3-lg ts-contributions-img" src="https://avatars1.githubusercontent.com/u/56481?s=460&v=4" alt="joshua"/>
+								</a>
+								<figcaption>
+									<p className="ts-contributions-name">Joshua Kunst</p>
+									<p className="ts-contributions-detail">Data Wrangling</p>
+								</figcaption>
+							</figure>
+
+							<figure>
+								<a href="https://github.com/erasmo-marin">
+									<img className="col-12-xs col-4-md col-3-lg ts-contributions-img" src="https://avatars1.githubusercontent.com/u/8242873?s=460&v=4" alt="erasmo"/>
+								</a>
+								<figcaption>
+									<p className="ts-contributions-name">Erasmo Marín</p>
+									<p className="ts-contributions-detail">Design</p>
+								</figcaption>
+							</figure>
 					</ScrollAnimation>
 				</div>
-				{
-					contributions.map((props) => (
-						<ScrollAnimation animateIn="fadeIn" animateOnce>
-							<Contribution {...props}/>
-						</ScrollAnimation>
-					))
-				}
 			</section>
 }
 
-export default Testimonials;
+export default Contributions;

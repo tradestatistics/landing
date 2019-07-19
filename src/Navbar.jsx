@@ -31,6 +31,24 @@ const Navbar = () => {
 		el.scrollIntoView({behavior: "smooth"});
 	}, []);
 
+	const scrollToStack = useCallback((e) => {
+		e.preventDefault();
+		e.stopPropagation();
+		const el = document.getElementsByClassName("ts-stack")[0];
+		if(!el)
+			return;
+		el.scrollIntoView({behavior: "smooth"});
+	}, []);
+
+	const scrollToPartners = useCallback((e) => {
+		e.preventDefault();
+		e.stopPropagation();
+		const el = document.getElementsByClassName("ts-partners")[0];
+		if(!el)
+			return;
+		el.scrollIntoView({behavior: "smooth"});
+	}, []);
+
 	return(
       <div className="ts-navbar">
         <div className="ts-navbar-wrapper d-flex col-12 space-between">
@@ -48,6 +66,12 @@ const Navbar = () => {
 						*/}
 						<div className="menu-item">
               <a href="#contributions" onClick={scrollToContributions}>Team & Contributions</a>
+            </div>
+						<div className="menu-item">
+              <a href="#partners" onClick={scrollToPartners}>Partners</a>
+            </div>
+						<div className="menu-item">
+              <a href="#stack" onClick={scrollToStack}>Software Stack</a>
             </div>
         		<div className="menu-item">
               <a href="https://docs.tradestatistics.io/" target="_blank" rel="noopener noreferrer">Docs</a>

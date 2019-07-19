@@ -1,5 +1,4 @@
 import React from 'react';
-import digitalOceanIcon from "./assets/do.svg";
 
 const Footer = () => {
 	return <footer className="ts-footer text-center">
@@ -33,9 +32,6 @@ const Footer = () => {
 							<li><a href="mailto:contact@tradestatistics.io">Email</a></li>
 						</ul>
 					</div>
-				</div>
-				<div className="powered-by col-12 d-flex justify-center">
-					<img src={digitalOceanIcon} alt="digital ocean" width="200" height="auto"/>
 				</div>
 				<div className="copyright d-flex justify-center align-center direction-column">
 					<div>

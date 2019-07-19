@@ -8,6 +8,8 @@ import Philosophy from "./Philosophy";
 import GettingStarted from "./GettingStarted";
 // import Testimonials from "./Testimonials";
 import Contributions from "./Contributions";
+import Partners from "./Partners";
+import Stack from "./Stack";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         {/* <Testimonials/> */}
         <GettingStarted/>
         <Contributions/>
+        <Partners/>
+        <Stack/>
       </div>
       <Footer/>
     </div>

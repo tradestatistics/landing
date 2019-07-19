@@ -390,28 +390,31 @@ button.primary {
 }
 
 .ts-contributions {
-
 	background-color: #fff;
 	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ececec' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 
-	.contribution {
-		padding: 3rem;
-		display: flex;
-		justify-content: center;
-		.name {
-			font-size: 14px;
-			font-weight: 400;
-		}
+  &-img {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 	}
 
-  .contribution-text {
+  &-name {
     font-family: 'Fira Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 0;
+    text-align: center;
   }
 
-  .avatar-text {
-    padding: 0 1rem;
+  &-detail {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
   }
 }
 
@@ -424,6 +427,30 @@ button.primary {
 			font-weight: 400;
 		}
 	}
+}
+
+.ts-partners {
+	background: #f5f5f5;
+}
+
+.ts-stack {
+	background: #fff;
+}
+
+.partners-image {
+  margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.stack-image {
+  margin: 0.5rem;
+}
+
+.stack-caption {
+  font-style: 'Fira Sans', sans-serif;
+  text-align: center;
+  color: #727272;
+  line-height: 1.7;
+  font-size: 17px;
 }
 
 .ts-footer {
@@ -447,10 +474,6 @@ button.primary {
 				}
 			}
 		}
-	}
-
-	.powered-by {
-		padding: 2rem 0 4rem 0;
 	}
 
 	.copyright {
