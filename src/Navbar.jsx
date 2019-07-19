@@ -47,7 +47,7 @@ const Navbar = () => {
              	</div>
 						*/}
 						<div className="menu-item">
-              <a href="#contributions" onClick={scrollToContributions}>Team</a>
+              <a href="#contributions" onClick={scrollToContributions}>Team & Contributions</a>
             </div>
         		<div className="menu-item">
               <a href="https://docs.tradestatistics.io/" target="_blank" rel="noopener noreferrer">Docs</a>
