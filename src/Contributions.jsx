@@ -2,23 +2,6 @@ import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import SectionTitle from "./components/SectionTitle";
 
-const contributions = [
-
-{
-	avatar: "https://avatars1.githubusercontent.com/u/4908283?s=460&v=4",
-	name: "Amanda Dobbyn",
-	contribution: `Software review`,
-	github: "https://github.com/aedobbyn"
-},
-
-{
-	avatar: "https://avatars1.githubusercontent.com/u/8242873?s=460&v=4",
-	name: "Erasmo Marin",
-	github: "https://github.com/erasmo-marin",
-	contribution: `Website`
-}
-]
-
 const Contributions = () => {
 	return <section className="ts-contributions d-flex justify-center wrap" id="contributions">
 				<div className="col-12-xs col-7-lg d-flex justify-center padding-4">
@@ -55,7 +38,7 @@ const Contributions = () => {
 							</figure>
 
 							<figure>
-								<a href="https://github.com/jbkunst">
+								<a href="https://github.com/aedobbyn">
 									<img className="col-12-xs col-4-md col-3-lg ts-contributions-img" src="https://avatars1.githubusercontent.com/u/4908283?s=460&v=4" alt="amanda"/>
 								</a>
 								<figcaption>
