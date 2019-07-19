@@ -40,13 +40,6 @@ const contributions = [
 	side: "left"
 },
 {
-	avatar: "https://avatars1.githubusercontent.com/u/11927811?s=460&v=4",
-	name: "Stefanie Butland",
-	github: "https://github.com/stefaniebutland",
-	contribution: `Proofreading`,
-	side: "left"
-},
-{
 	avatar: "https://avatars1.githubusercontent.com/u/56481?s=460&v=4",
 	name: "Joshua Kunst",
 	github: "https://github.com/jbkunst",
