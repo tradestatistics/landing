@@ -39,7 +39,15 @@ const Philosophy = () => {
 
 						<ScrollAnimation animateIn="fadeIn" delay={450} animateOnce>
 							<p>
-								Our goal is to ease data analysis and promote a reproducibility culture.
+								Besides open data we don't track users, we don't want your personal information and
+								we use https to protect your navigation and our service.
+							</p>
+						</ScrollAnimation>
+
+						<ScrollAnimation animateIn="fadeIn" delay={450} animateOnce>
+							<p>
+								Our goal is to ease data analysis, promote a reproducibility culture, and do something
+								towards a better internet.
 							</p>
 						</ScrollAnimation>
 					</div>
