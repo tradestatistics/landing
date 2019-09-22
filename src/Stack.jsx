@@ -39,16 +39,16 @@ const Stack = () => {
 									<figcaption className="stack-caption">RStudio</figcaption>
 								</figure>
           		</Col>
-        			</Row>
 
-							<Row>
-          		<Col sm={12} md={6} lg={3}>
+							<Col sm={12} md={6} lg={3}>
 								<figure>
 									<a href="https://www.postgresql.org/"><img src={postgresqlIcon} alt="postgresql" height="100" width="auto" className="stack-image"/></a>
 									<figcaption className="stack-caption">PostgreSQL</figcaption>
 								</figure>
           		</Col>
+        			</Row>
 
+							<Row>
 							<Col sm={12} md={6} lg={3}>
 								<figure>
 									<a href="https://reactjs.org/"><img src={reactIcon} alt="react" height="100" width="auto" className="stack-image"/></a>
