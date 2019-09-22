@@ -42,6 +42,7 @@ const GettingStarted = () => {
 					</ScrollAnimation>
 				</div>
 				<div className="d-flex col-12-xs col-7-lg direction-column align-center padding-4">
+				<ScrollAnimation animateIn="fadeInLeft" duration={2} animateOnce>
 					<div className="col-12 code-instruction">
 						<SectionSubTitle text="Using the API from R"/>
 						<pre className="lang-r" style={{ width: "100%" }}>
@@ -86,6 +87,7 @@ ots_create_tidy_data(years = 2017, reporters = "chl", partners = "arg")
  	                        </PrismCode>
  	                    </pre>
  	         </div>
+				</ScrollAnimation>
 				</div>
 			</section>
 }

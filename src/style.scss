@@ -243,7 +243,10 @@ button.primary {
 	width: 100%;
 	height: 100vh;
 	background-color: $primary;
-	background-image: url(assets/pattern-triangle.png);
+  background-image: linear-gradient(rgba(56,89,138,0.5), rgba(56,89,138,0.5)), url(assets/container-ship.jpg);
+  background-size: cover;
+  background-repeat: round;
+	/*background-image: url(assets/pattern-triangle.png);*/
 	position: relative;
 
 	.hero-content {
@@ -288,7 +291,7 @@ button.primary {
 		}
 
 		.logo {
-			width: 250px;
+			width: 60vw;
 			height: auto;
 		}
 
@@ -442,7 +445,9 @@ button.primary {
 }
 
 .stack-image {
-  margin: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stack-caption {

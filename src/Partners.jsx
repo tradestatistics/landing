@@ -3,6 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import SectionTitle from "./components/SectionTitle";
 import digitalOceanIcon from "./assets/do.svg";
 import rOpenSciIcon from "./assets/ropensci.svg";
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const Partners = () => {
 	return <section className="ts-partners d-flex justify-center wrap" id="partners">
@@ -19,10 +20,18 @@ const Partners = () => {
 						<p>
 							Thanks both to rOpenSci and DigitalOcean!
 						</p>
-						<div className="col-12 d-flex justify-center">
-							<img src={rOpenSciIcon} alt="ropensci" height="75" width="auto" className="partners-image"/>
-							<img src={digitalOceanIcon} alt="digitalocean" height="75" width="auto" className="partners-image"/>
-						</div>
+
+						<Grid>
+        			<Row>
+          		<Col sm={12} md={12} lg={6}>
+            		<img src={rOpenSciIcon} alt="ropensci" height="75" width="auto" className="partners-image"/>
+          		</Col>
+
+							<Col sm={12} md={12} lg={6}>
+            		<img src={digitalOceanIcon} alt="digitalocean" height="75" width="auto" className="partners-image"/>
+          		</Col>
+        			</Row>
+      			</Grid>
 					</ScrollAnimation>
 				</div>
 			</section>
