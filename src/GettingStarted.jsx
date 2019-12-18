@@ -10,7 +10,7 @@ const GettingStarted = () => {
 					<ScrollAnimation animateIn="fadeInLeft" duration={2} animateOnce>
 						<SectionTitle text="Getting Started"/>
 						<p>
-							We provide data for the period 1962-2017 covering all countries that report
+							We provide data for the period 1962-2018 covering all countries that report
 							to the United Nations.
 						</p>
 						<p>
@@ -18,7 +18,7 @@ const GettingStarted = () => {
 							to specific partners and to the world.
 						</p>
 						<p>
-							You can see reporting countries in 2017 <a href="https://api.tradestatistics.io/countries?y=2017">here</a>,
+							You can see reporting countries in 2018 <a href="https://api.tradestatistics.io/countries?y=2018">here</a>,
 							and our available tables <a href="https://api.tradestatistics.io/tables">here</a>.
 						</p>
 						<p>
@@ -57,7 +57,7 @@ library(tradestatistics)
 ots_attributes_tables
 
 # bilateral and product detailed data
-ots_create_tidy_data(years = 2017, reporters = "chl", partners = "arg")
+ots_create_tidy_data(years = 2018, reporters = "chl", partners = "arg")
 	                                `
 	                            }
 	                        </PrismCode>
@@ -80,7 +80,7 @@ ots_create_tidy_data(years = 2017, reporters = "chl", partners = "arg")
 
  # bilateral and product detailed data
  trade = json.loads(
-	 requests.get("https://api.tradestatistics.io/yrpc?y=2017&r=chl&p=arg").text)
+	 requests.get("https://api.tradestatistics.io/yrpc?y=2018&r=chl&p=arg").text)
  pandas.DataFrame.from_dict(trade, orient='columns')
  	                                `
  	                            }
