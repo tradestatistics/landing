@@ -73,6 +73,9 @@ const Navbar = () => {
 						<div className="menu-item">
               <a href="#stack" onClick={scrollToStack}>Software Stack</a>
             </div>
+						<div className="menu-item">
+              <a href="https://shiny.tradestatistics.io/" target="_blank" rel="noopener noreferrer">Dashboard (beta)</a>
+            </div>
         		<div className="menu-item">
               <a href="https://docs.tradestatistics.io/" target="_blank" rel="noopener noreferrer">Docs</a>
             </div>
